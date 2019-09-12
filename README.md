@@ -33,7 +33,7 @@ ResultSet *res;
 driver = get_driver_instance();
 ```
 ```cpp
-con = driver->connect("tcp://127.0.0.1:3306", "root", "JagroshSucks1337");
+con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
 ```
 In a method :
 ```cpp
