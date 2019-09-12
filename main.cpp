@@ -39,6 +39,7 @@ int main() {
   while(r->next()) {
     cout << res->getString(1) << endl;
   }
+  disconnectDb();
   return 0;
 }
 
