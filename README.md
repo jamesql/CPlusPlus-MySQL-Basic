@@ -27,3 +27,33 @@ Connection *con;
 Statement *stmt;
 ResultSet *res;
 ```
+
+# Initilize Driver & Connect
+```cpp
+driver = get_driver_instance();
+```
+```cpp
+con = driver->connect("tcp://127.0.0.1:3306", "root", "JagroshSucks1337");
+```
+In a method :
+```cpp
+void connectDatabase() {
+    driver = get_driver_instance();
+    con = driver->connect("tcp://127.0.0.1:3306", "root", "JagroshSucks1337");
+}
+
+void disconnectDb() {
+    con->close();
+    delete con;
+}
+```
+
+# Query w/ Result Set
+```cpp
+ResultSet* query(std::string statement) {
+    ResultSet *newRes;
+    stmt = con->createStatement();
+    newRes = stmt->executeQuery(statement);
+    return newRes;
+}
+```
