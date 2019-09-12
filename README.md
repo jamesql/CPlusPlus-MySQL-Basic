@@ -39,7 +39,7 @@ In a method :
 ```cpp
 void connectDatabase() {
     driver = get_driver_instance();
-    con = driver->connect("tcp://127.0.0.1:3306", "root", "JagroshSucks1337");
+    con = driver->connect("tcp://127.0.0.1:3306", "root", "password");
 }
 
 void disconnectDb() {
