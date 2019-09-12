@@ -1,11 +1,3 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include <QCoreApplication>
-#include <QPushButton>
-#include <QLabel>
-#include <QCheckBox>
-#include <QLineEdit>
-#include "sha256.h"
 #include "jdbc/mysql_connection.h"
 #include <jdbc/cppconn/driver.h>
 #include <jdbc/cppconn/exception.h>
